@@ -8,21 +8,24 @@
     <title>Black_Jack_JS</title>
   </head>
   <body>
-    <div id="dealer-div">
-      <div class="cards" id="dealer-cards-div"></div>
+    <div id="table">
+      <div id="dealer-div">
+        <div class="cards" id="dealer-cards-div"></div>
+        <div class="sum-cards" id="dealer-sum"></div>
+      </div>
+      <div id="player-div">
+        <div class="cards" id="player-cards-div"></div>
+        <div class="sum-cards" id="player-sum"></div>
+        <div id="bet"></div>
+        <div id="chips"></div>
+      </div>
+      <button id="hit-btn">HIT</button>
+      <button id="stand-btn">STAND</button>
+      <button id="surrender-btn">SURRENDER</button>
+      <button id="next-round">NEXT ROUND!</button>
+      <button id="start-btn">START A FRESH GAME</button>
+      <div id="game-message"></div>
     </div>
-    <div class="sum-cards" id="dealer-sum"></div>
-    <div id="player-div">
-      <div class="cards" id="player-cards-div"></div>
-      <div class="sum-cards" id="player-sum"></div>
-      <div id="chips"></div>
-    </div>
-    <button id="hit-btn">HIT</button>
-    <button id="stand-btn">STAND</button>
-    <button id="double-btn">DOUBLE</button>
-    <button id="split-btn">SPLIT</button>
-    <button id="surrender-btn">SURRENDER</button>
-    <button id="start-btn">START A FRESH GAME</button>
     <script src="index.js"></script>
   </body>
 </html>

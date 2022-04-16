@@ -1,4 +1,51 @@
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #01431E;
+
+}
+
+#table {
+  background-color: #016D29;
+  max-width: 500px;
+margin: auto;
+color: #ffffff;
+}
+
+.cards {
+  min-height: 50px;
+  text-align: center;
+  padding: 10px;
+}
+
+.card {
+  display: inline-grid;
+  height: 80px;
+  width: 50px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: solid 1px black;
+  padding: 10px;
+  font-size: 35px;
+}
+
+.card-value {
+  text-align: left;
+  font-weight: bold;
+}
+
+.card-suit {
+  text-align: right;
+}
+
+.suit-♥,
+.suit-♦ {
+  color: red;
+}
+
+.suit-♣,
+.suit-♠ {
+  color: black;
+  /* background-image: url('images/card-suits.png'); */
 }
