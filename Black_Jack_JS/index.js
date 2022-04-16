@@ -7,7 +7,7 @@ const bet = document.getElementById("bet");
 const hitBtn = document.getElementById("hit-btn");
 const standBtn = document.getElementById("stand-btn");
 const surrenderBtn = document.getElementById("surrender-btn");
-const nextRound = document.getElementById("next-round");
+const nextRound = document.getElementById("next-round-btn");
 const startBtn = document.getElementById("start-btn");
 const gameMessage = document.getElementById("game-message");
 const cardsDeck = {
@@ -128,7 +128,7 @@ hitBtn.addEventListener("click", function () {
       }
       if (pSum > 21) {
         alive = false;
-        gameMessage.textContent = "You are over 21, You lose!";
+        gameMessage.textContent = "You lose!";
       }
     }
   }
@@ -182,7 +182,7 @@ surrenderBtn.addEventListener("click", function () {
   if (playerCards.length === 2) {
     alive = false;
     playerChips += playerBet / 2;
-    gameMessage.textContent = "You gave up! But you get half of your bet back!";
+    gameMessage.textContent = "You gave up!";
   }
 });
 

@@ -1,20 +1,28 @@
 body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-    box-sizing: border-box;
-    background-color: #01431E;
-
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  background-color: #01431e;
 }
 
 #table {
-  background-color: #016D29;
+  background-color: #016d29;
   max-width: 500px;
-margin: auto;
-color: #ffffff;
+  margin: auto;
+  padding: 30px;
+  border-radius: 30px;
+  color: #f3c620;
+  font-size: 1.5em;
+}
+#header {
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
 }
 
 .cards {
-  min-height: 50px;
+  min-height: 122px;
   text-align: center;
   padding: 10px;
 }
@@ -47,5 +55,36 @@ color: #ffffff;
 .suit-♣,
 .suit-♠ {
   color: black;
-  /* background-image: url('images/card-suits.png'); */
+}
+
+.sum-cards {
+  text-align: center;
+  min-height: 3em;
+}
+
+#game-message {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 10px;
+}
+
+#buttons button {
+  grid-column: span 2;
+  margin: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: #3C1912;
+  color: #f3c620;
+}
+
+#buttons #next-round-btn,
+#buttons #start-btn {
+  grid-column: span 3;
 }
