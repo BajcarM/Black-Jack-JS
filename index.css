@@ -9,7 +9,7 @@ body {
   background-color: #016d29;
   max-width: 500px;
   margin: auto;
-  padding: 30px;
+  padding: 20px;
   border-radius: 30px;
   color: #f3c620;
   font-size: 1.5em;
@@ -19,6 +19,11 @@ body {
   font-weight: bold;
   text-align: center;
   font-size: 2em;
+}
+
+#player-div,
+#dealer-div {
+  padding: 10px;
 }
 
 .cards {
